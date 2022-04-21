@@ -39,7 +39,7 @@ html, body {
 .bn_principal {
     width: 100%;
     height: 600px;
-    background-image: url(https://raw.githubusercontent.com/augusto93/AnaVaz/main/_img/bn_01.jpg);
+    background-image: url("https://raw.githubusercontent.com/augusto93/AnaVaz/main/_img/bn_01.jpg");
     background-size: cover;
     background-position: center;
 }
