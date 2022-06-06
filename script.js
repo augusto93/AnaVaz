@@ -1,4 +1,15 @@
-$('.menu_link a[href^="#"]').on('click', function(e) {
+$('.menu_link, a[href^="#"]').on('click', function(e) {
+	e.preventDefault();
+	var id = $(this).attr('href'),
+			targetOffset = $(id).offset().top;
+			
+	$('html, body').animate({ 
+		scrollTop: targetOffset - 100
+	}, 1000);
+});
+
+
+$('.bn_container, a[href^="#"]').on('click', function(e) {
 	e.preventDefault();
 	var id = $(this).attr('href'),
 			targetOffset = $(id).offset().top;
