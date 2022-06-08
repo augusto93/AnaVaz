@@ -162,6 +162,7 @@ html, body {
     text-decoration: none;
     cursor: pointer;
     width: 40px;
+    padding: 0 10px;
 }
 
 #cards {
