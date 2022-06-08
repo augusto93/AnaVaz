@@ -14,16 +14,20 @@
     <link rel="apple-touch-icon" sizes="60x60" href="https://raw.githubusercontent.com/augusto93/AnaVaz/main/_img/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="https://raw.githubusercontent.com/augusto93/AnaVaz/main/_img/apple-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="76x76" href="https://raw.githubusercontent.com/augusto93/AnaVaz/main/_img/apple-icon-76x76.png">
+
     <link rel="apple-touch-icon" sizes="114x114" href="https://raw.githubusercontent.com/augusto93/AnaVaz/main/_img/apple-icon-114x114.png">
     <link rel="apple-touch-icon" sizes="120x120" href="https://raw.githubusercontent.com/augusto93/AnaVaz/main/_img/apple-icon-120x120.png">
     <link rel="apple-touch-icon" sizes="144x144" href="https://raw.githubusercontent.com/augusto93/AnaVaz/main/_img/apple-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="https://raw.githubusercontent.com/augusto93/AnaVaz/main/_img/apple-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="https://raw.githubusercontent.com/augusto93/AnaVaz/main/_img/apple-icon-180x180.png">
+
     <link rel="icon" type="image/png" sizes="192x192"  href="https://raw.githubusercontent.com/augusto93/AnaVaz/main/_img/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="https://raw.githubusercontent.com/augusto93/AnaVaz/main/_img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="https://raw.githubusercontent.com/augusto93/AnaVaz/main/_img/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="https://raw.githubusercontent.com/augusto93/AnaVaz/main/_img/favicon-16x16.png">
+
     <link rel="manifest" href="https://raw.githubusercontent.com/augusto93/AnaVaz/main/_img/manifest.json">
+
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="https://raw.githubusercontent.com/augusto93/AnaVaz/main/_img/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
@@ -51,11 +55,27 @@
             </div>
         </nav>
         <section class="bn_principal">
-            <div class="content">
+            <div class="bn_content">
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <img class="slide" src="_img/bn_01.jpg">
+                    </div>
+                    <div class="mySlides fade">
+                        <img class="slide" src="_img/bn_02.jpg">
+                    </div>
+                </div>
                 <div class="bn_container">
-                    <a href="#projetos">
-                        <button class="btn_bn">clique e veja os projetos</button>
-                    </a>
+                    <div class="btn-nav">
+                        <img onclick="plusSlides(-1)" src="_img/next.svg">
+                    </div>
+                    <div class="btn-bn">
+                        <a href="#projetos">
+                            <div>clique e veja os projetos</div>
+                        </a>
+                    </div>
+                    <div class="btn-nav">
+                        <img onclick="plusSlides(1)" src="_img/prev.svg">
+                    </div>
                 </div>
             </div>
         </section>

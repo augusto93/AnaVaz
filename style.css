@@ -24,6 +24,7 @@ html, body {
 
 .menu {
     width: 100%;
+    max-width: 100vw;
     height: 80px;
     padding: 10px 0;
     display: flex;
@@ -32,6 +33,7 @@ html, body {
     background-color: #955561;
     position: fixed;
     z-index: 999;
+
 }
 
 .menu_link a {
@@ -45,34 +47,121 @@ html, body {
     border-bottom: 2px #ffffff solid ;
 }
 
-.bn_principal {
-    width: 100%;
-    height: 600px;
-    background-image: url("https://raw.githubusercontent.com/augusto93/AnaVaz/main/_img/bn_01.jpg");
-    /* background-image: url("_img/bn_01.jpg"); */
-    background-size: cover;
-    background-position: center;
-}
-
-.bn_container {
+/* Slideshow container */
+.slideshow-container {
     width: 100%;
     height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+  }
+  
+  /* Next & previous buttons */
+  /* .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: #063640;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  } */
+
+  .slide {
+    width: 100vw;
+    height: 600px;
+    object-fit: cover
+}
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+    
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
+
+.bn_principal {
+    width: 100%;
+    height: 100%;
+    max-height: 600px;
+    background-color: #063640;
+}
+
+.bn_content {
+    width: 100%;
+    height: 100%;
+    max-height: 600px;
     position: relative;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     align-items: center;
 }
 
-.btn_bn {
+.bn_container {
+    position: absolute;
+    width: 100%;
+    max-width: 1366px;
+    height: 100%;
+    z-index: 998;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 80px 0 0 0;
+}
+
+.btn-bn a {
+    text-decoration: none;
+}
+
+.btn-bn div {
     position: relative;
+    width: 260px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #063640;
     color: #ffffff;
     font-size: 18px;
-    width: 260px;
-    height: 40px;
     border-radius: 20px;
-    margin: 0 0 80px 0 ;
     cursor: pointer;
+    margin: 260px 0 0 0;
+}
+
+.btn-nav {
+    text-decoration: none;
+    cursor: pointer;
+    width: 40px;
 }
 
 #cards {
@@ -255,6 +344,7 @@ html, body {
 .form_content {
     width: 100%;
     height: 100%;
+    max-width: 100vw;
     background-color: #efe7e2;
     display: flex;
     justify-content: center;
