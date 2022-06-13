@@ -54,19 +54,20 @@
                 <a href="#contato">Contato</a>
             </div>
         </nav>
+
         <section class="bn_principal">
             <div class="bn_content">
-                <div class="slideshow-container">
-                    <div class="mySlides fade">
+                <div class="carousel">
+                    <div class="imagesSlides">
                         <img class="slide" src="https://raw.githubusercontent.com/augusto93/AnaVaz/main/_img/bn_01.jpg">
                     </div>
-                    <div class="mySlides fade">
+                    <div class="imagesSlides">
                         <img class="slide" src="https://raw.githubusercontent.com/augusto93/AnaVaz/main/_img/bn_02.jpg">
                     </div>
                 </div>
                 <div class="bn_container">
                     <div class="btn-nav">
-                        <img onclick="plusSlides(-1)" src="https://raw.githubusercontent.com/augusto93/AnaVaz/main/_img/next.svg">
+                        <img onclick="nextSlides(-1)" src="https://raw.githubusercontent.com/augusto93/AnaVaz/main/_img/next.svg">
                     </div>
                     <div class="btn-bn">
                         <a href="#projetos">
@@ -74,11 +75,12 @@
                         </a>
                     </div>
                     <div class="btn-nav">
-                        <img onclick="plusSlides(1)" src="https://raw.githubusercontent.com/augusto93/AnaVaz/main/_img/prev.svg">
+                        <img onclick="nextSlides(1)" src="https://raw.githubusercontent.com/augusto93/AnaVaz/main/_img/prev.svg">
                     </div>
                 </div>
             </div>
         </section>
+
         <section id="cards">
             <div class="content">
                 <h3 class="title_cards">Serviços</h3>
@@ -117,43 +119,103 @@
                 </div>
             </div>
         </section>
+
         <section id="projetos">
             <div class="grid_project">
                 <div class="grid_content">
                     <div class="grid_img"><img src="https://raw.githubusercontent.com/augusto93/AnaVaz/main/_img/Apart_Ipanema.jpg" alt="foto_01" /></div>
-                    <div class="grid_bg">
+                    <div class="grid_bg"  >
                         <div class="grid_text"> 
                             <h3>Projeto </h3> 
-                            <h4>Raquel e João</h4>
+                            <h4>Apartamento Ipanema</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal_content">
+                    <div class="modal">
+                        <div class="close_modal">X Fechar</div>
+                        <div class="modal_container">
+                            <div class="modal_text">
+                                <h3>Projeto </h3> 
+                                <h4>Apartamento Ipanema</h4>
+                                <p>Localizado no coração de Ipanema, este apartamento de 45 m² foi reformado para valorizar o imóvel e para ser colocado para locação. O desafio era torná-lo mais amplo e deixá-lo convidativo para qualquer pessoa que fosse alugá-lo e para colocar a sua própria personalidade. Por isso foi pensando em uma cozinha integrada com a sala para dar mais amplitude, além de criar um visual contemporâneo e aconchegante. O banheiro de serviço foi reaproveitado e transformado em lavabo.</p>
+                            </div>
+                            <div class="modal_image">
+                                <img src="https://raw.githubusercontent.com/augusto93/AnaVaz/main/_img/Apart_Ipanema.jpg">
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="grid_content">
                     <div class="grid_img"><img src="https://raw.githubusercontent.com/augusto93/AnaVaz/main/_img/Raquel_e_João_1.jpg" alt="foto_02" /></div>
-                    <div class="grid_bg">
+                    <div class="grid_bg" >
                         <div class="grid_text"> 
                             <h3>Projeto </h3> 
-                            <h4>Raquel e João</h4>
+                            <h4>Apartamento Icaraí – Raquel e João </h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal_content">
+                    <div class="modal">
+                        <div class="close_modal">X Fechar</div>
+                        <div class="modal_container">
+                            <div class="modal_text">
+                                <h3>Projeto </h3> 
+                                <h4>Apartamento Icaraí – Raquel e João </h4>
+                                <p>Cozinhas integradas são charmosas e, ainda, uma ótima escolha para espaços pequenos. Com paredes a menos, é possível ter sensação de amplitude, além de criar um visual contemporâneo e aconchegante. Para quem gosta de cozinhar enquanto recebe os amigos em casa, esse tipo de ambiente, também conhecido como cozinha americana, é ideal. É só colocar os convidados acomodados em volta do balcão. Para combinar com o clima despojado do apartamento de um Jovem casal, os ambientes tem marcenaria de linhas retas, tons amadeirados e alguns detalhes na cor azul e verde que trazem personalidade e se destacam na decoração de base clara. O que deixou tudo mais charmoso.</p>
+                            </div>
+                            <div class="modal_image">
+                                <img src="https://raw.githubusercontent.com/augusto93/AnaVaz/main/_img/Raquel_e_João_1.jpg">
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="grid_content">
                     <div class="grid_img"><img src="https://raw.githubusercontent.com/augusto93/AnaVaz/main/_img/Edson_Kroger.jpg" alt="foto_03" /></div>
-                    <div class="grid_bg">
+                    <div class="grid_bg"  >
                         <div class="grid_text"> 
                             <h3>Projeto </h3> 
-                            <h4>Raquel e João</h4>
+                            <h4>Apartamento Centro - Edson</h4>
                         </div>
                     </div>
                 </div>
-
+                <div class="modal_content">
+                    <div class="modal">
+                        <div class="close_modal">X Fechar</div>
+                        <div class="modal_container">
+                            <div class="modal_text">
+                                <h3>Projeto </h3> 
+                                <h4>Apartamento Centro - Edson </h4>
+                                <p>Com a planta integrada e jeito de Studio, esse apartamento de 25m² foi projetado para um jovem Advogado que acabara de comprar seu primeiro apartamento. Por morar em outro município o propósito desse imóvel é aproveitá-lo ao máximo, por isso o cliente fez questão de reformá-lo, com custo baixo, para alugá-lo por temporada. Localizado no Centro do Rio de Janeiro, o mix dos tons amadeirados, preto e cinza a cor azul deu um destaque e a sensação de estar em um loft cosmopolita sofisticado. De espírito industrial/contemporâneo, este apartamento materializa todos os sonhos de um jovem solteiro e que cada traço de sua identidade ganhou valor no projeto.</p>
+                            </div>
+                            <div class="modal_image">
+                                <img src="https://raw.githubusercontent.com/augusto93/AnaVaz/main/_img/Edson_Kroger.jpg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
                 <div class="grid_content">
                     <div class="grid_img"><img src="https://raw.githubusercontent.com/augusto93/AnaVaz/main/_img/Sandro_e_Jane.jpg" alt="foto_04" /></div>
                     <div class="grid_bg">
                         <div class="grid_text"> 
                             <h3>Projeto </h3> 
-                            <h4>Raquel e João</h4>
+                            <h4>Casa Camboinhas – Jane e Sandro </h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal_content">
+                    <div class="modal">
+                        <div class="close_modal">X Fechar</div>
+                        <div class="modal_container">
+                            <div class="modal_text">
+                                <h3>Projeto </h3> 
+                                <h4>Casa Camboinhas – Jane e Sandro </h4>
+                                <p>A ideia inicial dessa casa era aumentar a piscina e torná-la mais convidativa para família e convidados, mas o famoso “já que...” transformou-se em uma grande reforma por todos os cômodos da casa. O casal já morava na casa a quase 10 anos e queriam um imóvel que transmitisse suas personalidade, incorporando também a atmosfera da região oceânica de Niterói, com uma pegada mais contemporânea e industrial. O principal pedido dos moradores foi a ampliação da piscina com uma sauna e hidromassagem integrada e uma área de convivência para toda família. As fachadas foram totalmente reformuladas com uma estrutura de serralheria na cor preta e vidro, que permite o contato visual com o restante do imóvel e a entrada de Iluminação Natural.  A Designer Carolina Fragelli foi responsável pelo projeto de interiores.</p>
+                            </div>
+                            <div class="modal_image">
+                                <img src="https://raw.githubusercontent.com/augusto93/AnaVaz/main/_img/Sandro_e_Jane.jpg">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -162,7 +224,22 @@
                     <div class="grid_bg">
                         <div class="grid_text"> 
                             <h3>Projeto </h3> 
-                            <h4>Raquel e João</h4>
+                            <h4>Área Gourmet – Itaipava</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal_content">
+                    <div class="modal">
+                        <div class="close_modal">X Fechar</div>
+                        <div class="modal_container">
+                            <div class="modal_text">
+                                <h3>Projeto </h3> 
+                                <h4>Área Gourmet – Itaipava </h4>
+                                <p>A área gourmet com churrasqueira e piscina é um sonho de consumo! Afinal de contas, é impossível não gostar de curtir um dia ensolarado acompanhado de uma boa refeição, não é mesmo? Essa família precisava remodelar e ampliar o espaço existente para comportar toda família e amigos e também reforçar a convivência e proporcionar um conforto maior, para o grande número de convidados. Esses espaços também foram pensados para serem aproveitados nos dias mais frios da região serrana do Rio de Janeiro. Através de fechamentos das áreas comuns e aquecimento na piscina.</p>
+                            </div>
+                            <div class="modal_image">
+                                <img src="https://raw.githubusercontent.com/augusto93/AnaVaz/main/_img/Raquel_e_João_2.jpg">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -171,7 +248,22 @@
                     <div class="grid_bg">
                         <div class="grid_text"> 
                             <h3>Projeto </h3> 
-                            <h4>Raquel e João</h4>
+                            <h4>Clínica odontológica – Vilar dos Teles </h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal_content">
+                    <div class="modal">
+                        <div class="close_modal" >X Fechar</div>
+                        <div class="modal_container">
+                            <div class="modal_text">
+                                <h3>Projeto </h3> 
+                                <h4>Clínica odontológica – Vilar dos Teles </h4>
+                                <p>Projeto de personalização para a Clínica Odontológica, localizada em São João de Meriti, Rio de Janeiro. Onde a cliente precisava reformular o espaço, saindo da tradicionalidade das cores frias para um ambiente mais quente e aconchegante para os pacientes, sem fazer uma grande obra. Portanto foi desenhada uma marcenaria personalizada, conforme a necessidade dos usuários, tornando-a mais prática e funcional. Os pilares foram revestidos com acabamentos cerâmicos, no tom amadeirado para contrastar com as paredes claras e dar um toque de sofisticação no espaço.</p>
+                            </div>
+                            <div class="modal_image">
+                                <img src="https://raw.githubusercontent.com/augusto93/AnaVaz/main/_img/7.jpg">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -179,10 +271,25 @@
 
                 <div class="grid_content">
                     <div class="grid_img"><img src="https://raw.githubusercontent.com/augusto93/AnaVaz/main/_img/Quarto_Joaquim.jpg" alt="foto_07" /></div>
-                    <div class="grid_bg">
+                    <div class="grid_bg" >
                         <div class="grid_text"> 
                             <h3>Projeto </h3> 
-                            <h4>Raquel e João</h4>
+                            <h4>Apartamento Lapa </h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal_content">
+                    <div class="modal">
+                        <div class="close_modal" >X Fechar</div>
+                        <div class="modal_container">
+                            <div class="modal_text">
+                                <h3>Projeto </h3> 
+                                <h4>Apartamento Lapa </h4>
+                                <p>Projetado para um jovem casal, esse apartamento de 35 m² necessitava de uma boa reforma para aproveitar melhor o espaço e torná-lo funcional. Apesar da pouca metragem, a parede do antigo banheiro foi demolida, dando lugar a uma cozinha integrada para ampliar o espaço. Para dividir os ambientes, foi pensado em uma alternativa móvel com vidro opaco, assim teriam privacidade sem perder a iluminação e ventilação natural.</p>
+                            </div>
+                            <div class="modal_image">
+                                <img src="https://raw.githubusercontent.com/augusto93/AnaVaz/main/_img/Quarto_Joaquim.jpg">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -191,7 +298,22 @@
                     <div class="grid_bg">
                         <div class="grid_text"> 
                             <h3>Projeto </h3> 
-                            <h4>Raquel e João</h4>
+                            <h4>Cliente</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal_content">
+                    <div class="modal">
+                        <div class="close_modal" >X Fechar</div>
+                        <div class="modal_container">
+                            <div class="modal_text">
+                                <h3>Projeto </h3> 
+                                <h4>Cliente </h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea veritatis provident rerum et dicta quam tenetur. Sint magni doloremque, odit suscipit exercitationem ut, dolores animi deleniti porro eaque, officiis possimus?</p>
+                            </div>
+                            <div class="modal_image">
+                                <img src="https://raw.githubusercontent.com/augusto93/AnaVaz/main/_img/Denoiser.jpg">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -200,12 +322,28 @@
                     <div class="grid_bg">
                         <div class="grid_text"> 
                             <h3>Projeto </h3> 
-                            <h4>Raquel e João</h4>
+                            <h4>Escritório de Advocacia – Casaes & Almeida</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal_content">
+                    <div class="modal">
+                        <div class="close_modal" >X Fechar</div>
+                        <div class="modal_container">
+                            <div class="modal_text">
+                                <h3>Projeto </h3> 
+                                <h4>Escritório de Advocacia – Casaes & Almeida </h4>
+                                <p>Como todas as empresas corporativas, esse escritório de Advocacia também foi afetado pela Pandemia e precisou passar por uma grande reestruturação. Para tornar o ambiente de trabalho mais atrativo e confortável com a volta dos colaboradores, foi um desafio reformular o layout de toda empresa sem onerar muito. A ideia era modernizar os espaços, renovando a estética e destacando o charme e funcionalidade de cada ambiente.</p>
+                            </div>
+                            <div class="modal_image">
+                                <img src="https://raw.githubusercontent.com/augusto93/AnaVaz/main/_img/Escritorio_Casaes_e_Almeida.jpg">
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
         <section id="parceiros">
             <div class="content ajustment">
                 <h3>Parceiros</h3>
@@ -288,6 +426,7 @@
                 </div>
             </div>
         </section>
+
         <section id="perfil">
             <div class="content">
                 <div class="pf_adjust">
@@ -313,6 +452,7 @@
                 </div>
             </div>  
         </section>
+
         <section id="contato">
             <div class="content form_content">
                 <div class="form_text">
@@ -351,7 +491,7 @@
     </main> 
     
 
-    <script src='script.js'></script>
+    <script src='app.js'></script>
 
 </body>
 </html>

@@ -3,11 +3,11 @@
     padding: 0;
     border: 0;
     vertical-align: baseline;
+    scroll-behavior:smooth; 
 }
 
 html, body {
     font-family: Arial, Helvetica, sans-serif;
-    scroll-behavior: smooth;
 }
 
 #container {
@@ -47,69 +47,6 @@ html, body {
     border-bottom: 2px #ffffff solid ;
 }
 
-/* Slideshow container */
-.slideshow-container {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    overflow: hidden;
-    position: relative;
-    margin: 0 auto;
-  }
-  
-  /* Next & previous buttons */
-  /* .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: #063640;
-    font-weight: bold;
-    font-size: 18px;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  } */
-
-  .slide {
-    width: 100vw;
-    height: 600px;
-    object-fit: cover
-}
-  
-  /* Position the "next button" to the right */
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-  }
-    
-  /* The dots/bullets/indicators */
-  .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
-  
-  .active, .dot:hover {
-    background-color: #717171;
-  }
-  
-  /* On smaller screens, decrease text size */
-  @media only screen and (max-width: 300px) {
-    .prev, .next,.text {font-size: 11px}
-  }
-
 .bn_principal {
     width: 100%;
     height: 100%;
@@ -125,18 +62,6 @@ html, body {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.bn_container {
-    position: absolute;
-    width: 100%;
-    max-width: 1366px;
-    height: 100%;
-    z-index: 998;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 80px 0 0 0;
 }
 
 .btn-bn a {
@@ -201,7 +126,6 @@ html, body {
 .grid_text {
     position: absolute;
     color: #ffffff;
-    font-size: 25px;
     line-height: 28px;
     top: 0;
     width: 100%;
@@ -210,12 +134,16 @@ html, body {
 }
 
 .grid_text h3 {
+    font-size: 18px;
     font-weight: 500;
 }
 
 .grid_text h4 {
+    font-size: 22px;
     font-weight: 700;
 }
+
+/* Hover to projects */
 
 .grid_bg {
     position: absolute;
@@ -229,7 +157,7 @@ html, body {
     cursor: pointer;
 }
 
-.grid_bg:hover {
+.active {
     transform: translate(0px, 200px);
     background-color: #063640;
     opacity: 0.8;
@@ -237,6 +165,8 @@ html, body {
     height: 100%;
     color: #ffffff;
 }
+
+/* Hover to projects */
 
 .cards_content {
     width: 100%;
@@ -408,4 +338,121 @@ html, body {
 
 #textarea {
     padding: 50px 0;
+}
+
+
+
+
+/* Componets to carousel */
+.carousel {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+}
+
+.slide {
+    width: 100vw;
+    height: 600px;
+    object-fit: cover
+}
+
+.bn_container {
+    position: absolute;
+    width: 100%;
+    max-width: 1366px;
+    height: 100%;
+    z-index: 998;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 80px 0 0 0;
+}
+
+/* Components to modal */
+.modal_content {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 999;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.show {
+    display: flex;
+}
+
+.close_modal {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    color: #00333e;
+    font-size: 10px;
+    z-index: 999;
+    margin: 20px 20px 0 0;
+    cursor: pointer;
+}
+
+.modal {
+    position: relative;
+    width: 100%;
+    max-width: 750px;
+    height: 100%;
+    max-height: 600px;
+    background-color: #ffffff;
+    border-radius: 2%;
+    overflow: hidden;
+}
+
+.modal_text {
+    position: relative; 
+    margin: 25px 0 0 0;
+}
+
+.modal_text h3 {
+    font-size: 25px;
+    font-weight: 500;
+    color: #00333e;
+}
+.modal_text h4 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #00333e;
+    margin: 0 0 20px 0;
+}
+
+.modal_text p {
+    font-size: 14px;
+    font-weight: 500;
+    color: #00333e;
+}
+
+.modal_image {
+    width: 100%;
+    height: 100%;
+    padding: 20px 0 0 0;
+}
+
+.modal_image img {
+    width: 650px;
+    height: 295px;
+    object-fit: cover;
+}
+
+.modal_container {
+    position: relative;
+    margin: 10px 40px 20px 60px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
