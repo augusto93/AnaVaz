@@ -9,7 +9,6 @@ let show = document.querySelector(".show");
 
 arrayProjects.forEach(event => {
 	event.addEventListener("click", function () {
-		console.log(this.nextElementSibling);
 		this.nextElementSibling.classList.toggle("show");
 	});
 });
@@ -17,13 +16,57 @@ arrayProjects.forEach(event => {
 arrayClose.forEach(event => {
 	event.addEventListener("click", function () {
 		let vo = this.closest(".modal_content")
-		vo.classList.remove("show");
+		vo.classList.toggle("show");
 	});
 });
 
+let modalIndex = 1;
+modalSlides(modalIndex);
+
+function changeModal(n) {
+  modalSlides(modalIndex += n);
+};
+
+function modalSlides(n) {
+  let i;
+	let modal = document.querySelectorAll(".modal_content");
+	let arrayModal = Array.from(modal);
+		if (n > arrayModal.length) {modalIndex = 1}
+		if (n < 1) {modalIndex = arrayModal.length}
+		else {
+			}
+		for (i = 0; i < arrayModal.length; i++) {
+			arrayModal[i].classList.remove ("show")
+		}
+			arrayModal[modalIndex-1].classList.add ("show")
+};
+
+const hide = document.querySelector('.modal_content');
+hide.classList.remove("show");
 
 // _________________________________________________________________________
 // slideshow
+
+let interval = 0;
+let maxSlider = document.querySelectorAll(".imagesSlides").length - 1;
+
+action();
+
+function action() {
+	let img = document.querySelectorAll(".imagesSlides");
+	setInterval(function() {
+		img[interval].style.display = "none";
+		interval++;
+		if(interval > maxSlider) {
+			interval = 0;
+		}
+		img[interval].style.display = "block";
+	},10000);
+}
+
+let carrosel = document.querySelectorAll(".imagesSlides");
+arrayCarrosel = Array.from(carrosel);
+
 let carroselIndex = 1;
 carroselSlides(carroselIndex);
 
@@ -31,21 +74,16 @@ function nextSlides(n) {
   carroselSlides(carroselIndex += n);
 };
 
-function currentSlide(n) {
-  carroselSlides(carroselIndex = n);
-};
 
 function carroselSlides(n) {
   let i;
-  let carrosel = document.getElementsByClassName("imagesSlides");
   if (n > carrosel.length) {carroselIndex = 1}    
   if (n < 1) {carroselIndex = carrosel.length}
   for (i = 0; i < carrosel.length; i++) {
     carrosel[i].style.display = "none";  
   }
   carrosel[carroselIndex-1].style.display = "block";  
-};
-
+} 
 
 // _________________________________________________________________________
 // Event to hover to projects 
@@ -62,7 +100,6 @@ projects.forEach(project => {
 	project.addEventListener("mouseenter", activeClasse);
 });
 
-
 // _________________________________________________________________________
 // Event to smoth scroll page 
 $('a[href^="#"]').on('click', function(e) {
@@ -74,58 +111,3 @@ $('a[href^="#"]').on('click', function(e) {
 		scrollTop: targetOffset - 100
 	}, 1000);
 });
-
-
-
-
-
-
-// let modal = document.querySelector(".modal_content");
-// // console.log(modal)
-
-// function showModal () {
-// 	console.log("clicou");
-// };
-
-
-// modal.addEventListener("click", showModal);
-
-
-// function showClasse (e) {
-// 	console.log(e.target.classList);
-// }
-
-// modal.forEach(modals => {
-// 	modals.addEventListener("click", showClasse);
-// });
-
-// const projects = document.querySelectorAll(".grid_bg");
-
-// function activeClasse (e) {
-// 	projects.forEach(project => {
-// 		project.classList.remove("active");
-// 	});
-// 	e.target.classList.add("active");
-// };
-
-// function removeActiveClasse (e) {
-// 	projects.forEach(project => {
-// 		project.classList.remove("active");
-// 	});
-// }
-
-
-
-
-
-
-// const modal = document.querySelector(".modal_content");
-
-// function openModal() {
-//   document.querySelector(".modal_content").style.display = "flex";
-	
-// };
-
-// function closeModal() {
-// 	document.querySelector(".modal_content").style.display = "none";
-// };

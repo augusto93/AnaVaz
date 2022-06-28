@@ -58,11 +58,14 @@
         <section class="bn_principal">
             <div class="bn_content">
                 <div class="carousel">
-                    <div class="imagesSlides">
-                        <img class="slide" src="https://raw.githubusercontent.com/augusto93/AnaVaz/main/_img/bn_01.jpg">
+                    <div class="imagesSlides" id="imgban1">
+                        <img class="slide" src="_img/banner_01.jpg">
                     </div>
-                    <div class="imagesSlides">
-                        <img class="slide" src="https://raw.githubusercontent.com/augusto93/AnaVaz/main/_img/bn_02.jpg">
+                    <div class="imagesSlides" id="imgban2">
+                        <img class="slide" src="_img/banner_02.jpg">
+                    </div>
+                    <div class="imagesSlides" id="imgban3">
+                        <img class="slide" src="_img/banner_03.jpg">
                     </div>
                 </div>
                 <div class="bn_container">
@@ -86,18 +89,18 @@
                 <h3 class="title_cards">Serviços</h3>
                 <div class="grid_cards">
                     <div class="cards_content">
+                        <img src="https://raw.githubusercontent.com/augusto93/AnaVaz/main/_img/ico_2.png" alt="ico_2" />
+                        <h3>Projeto Arquitetura e interiores</h3>
+                        <p>
+                            Projeto de Arquitetura é um conjunto de estudos que tem como objetivo trazer conforto, funcionalidade e beleza para o interior de uma edificação. Ele contém todos os detalhes.
+                        </p>
+                    </div>
+                    <div class="cards_content">
                         <img src="https://raw.githubusercontent.com/augusto93/AnaVaz/main/_img/ico_1.png" alt="ico_1" />
                         <h3>Visita Técnica</h3>
                         <p>
                             A contratação de um arquiteto é um investimento e deve ser analisada com bastante cuidado. 
                             Sua visita à obra significa que quer se envolver com a execução e acompanhar os detalhes de cada etapa do projeto arquitetônico.
-                        </p>
-                    </div>
-                    <div class="cards_content">
-                        <img src="https://raw.githubusercontent.com/augusto93/AnaVaz/main/_img/ico_2.png" alt="ico_2" />
-                        <h3>Projeto Arquitetura e interiores</h3>
-                        <p>
-                            O projeto Executivo consiste exatamente na elaboração dos desenhos finais. Ele contém todos os detalhes necessários para a concepção da estrutura e das instalações em geral para a perfeita execução da obra.
                         </p>
                     </div>
                 </div>
@@ -122,6 +125,7 @@
 
         <section id="projetos">
             <div class="grid_project">
+
                 <div class="grid_content">
                     <div class="grid_img"><img src="https://raw.githubusercontent.com/augusto93/AnaVaz/main/_img/Apart_Ipanema.jpg" alt="foto_01" /></div>
                     <div class="grid_bg"  >
@@ -133,6 +137,10 @@
                 </div>
                 <div class="modal_content">
                     <div class="modal">
+                        <div class="direction">
+                            <button class="prev" onclick="changeModal(-1)" >prev</button>
+                            <button class="next" onclick="changeModal(1)" >next</button>
+                        </div>
                         <div class="close_modal">X Fechar</div>
                         <div class="modal_container">
                             <div class="modal_text">
@@ -157,6 +165,10 @@
                 </div>
                 <div class="modal_content">
                     <div class="modal">
+                        <div class="direction">
+                            <button class="prev" onclick="changeModal(-1)" >prev</button>
+                            <button class="next" onclick="changeModal(1)" >next</button>
+                        </div>
                         <div class="close_modal">X Fechar</div>
                         <div class="modal_container">
                             <div class="modal_text">
@@ -181,6 +193,10 @@
                 </div>
                 <div class="modal_content">
                     <div class="modal">
+                        <div class="direction">
+                            <button class="prev" onclick="changeModal(-1)" >prev</button>
+                            <button class="next" onclick="changeModal(1)" >next</button>
+                        </div>
                         <div class="close_modal">X Fechar</div>
                         <div class="modal_container">
                             <div class="modal_text">
@@ -206,6 +222,10 @@
                 </div>
                 <div class="modal_content">
                     <div class="modal">
+                        <div class="direction">
+                            <button class="prev" onclick="changeModal(-1)" >prev</button>
+                            <button class="next" onclick="changeModal(1)" >next</button>
+                        </div>
                         <div class="close_modal">X Fechar</div>
                         <div class="modal_container">
                             <div class="modal_text">
@@ -230,6 +250,10 @@
                 </div>
                 <div class="modal_content">
                     <div class="modal">
+                        <div class="direction">
+                            <button class="prev" onclick="changeModal(-1)" >prev</button>
+                            <button class="next" onclick="changeModal(1)" >next</button>
+                        </div>
                         <div class="close_modal">X Fechar</div>
                         <div class="modal_container">
                             <div class="modal_text">
@@ -254,6 +278,10 @@
                 </div>
                 <div class="modal_content">
                     <div class="modal">
+                        <div class="direction">
+                            <button class="prev" onclick="changeModal(-1)" >prev</button>
+                            <button class="next" onclick="changeModal(1)" >next</button>
+                        </div>
                         <div class="close_modal" >X Fechar</div>
                         <div class="modal_container">
                             <div class="modal_text">
@@ -268,7 +296,6 @@
                     </div>
                 </div>
 
-
                 <div class="grid_content">
                     <div class="grid_img"><img src="https://raw.githubusercontent.com/augusto93/AnaVaz/main/_img/Quarto_Joaquim.jpg" alt="foto_07" /></div>
                     <div class="grid_bg" >
@@ -280,6 +307,10 @@
                 </div>
                 <div class="modal_content">
                     <div class="modal">
+                        <div class="direction">
+                            <button class="prev" onclick="changeModal(-1)" >prev</button>
+                            <button class="next" onclick="changeModal(1)" >next</button>
+                        </div>
                         <div class="close_modal" >X Fechar</div>
                         <div class="modal_container">
                             <div class="modal_text">
@@ -304,6 +335,10 @@
                 </div>
                 <div class="modal_content">
                     <div class="modal">
+                        <div class="direction">
+                            <button class="prev" onclick="changeModal(-1)" >prev</button>
+                            <button class="next" onclick="changeModal(1)" >next</button>
+                        </div>
                         <div class="close_modal" >X Fechar</div>
                         <div class="modal_container">
                             <div class="modal_text">
@@ -328,6 +363,10 @@
                 </div>
                 <div class="modal_content">
                     <div class="modal">
+                        <div class="direction">
+                            <button class="prev" onclick="changeModal(-1)" >prev</button>
+                            <button class="next" onclick="changeModal(1)" >next</button>
+                        </div>
                         <div class="close_modal" >X Fechar</div>
                         <div class="modal_container">
                             <div class="modal_text">
@@ -435,7 +474,7 @@
                         <h3>
                             Ana Luiza Vaz
                         </h3>
-                        <p>Alguns sonhos não nos largam. Podemos envelhecer, mudar de cidade, mudar nossa casa, nosso relacionamento ou nosso cabelo. Alguns sonhos nascem em nós e permanecem engendrados até que coloquemos eles em prática. A história de Ana Luiza, hoje a frente da Ana Vaz, ganhou esse tom.</p>
+                        <p>Alguns sonhos não nos largam. Podemos envelhecer, mudar de cidade, mudar nossa casa, nosso relacionamento ou nosso cabelo. Alguns sonhos nascem em nós e permanecem engendrados até que coloquemos eles em prática. A história de Ana Luiza, hoje a frente da Ana Vaz Arquitetura, ganhou esse tom.</p>
                         <br>
                         <p>Ana é um nome em ascensão no mercado de interiores, oferecendo projetos que passeiam entre o atemporal e o contemporâneo e servem como um quadro em branco que será pintado pelas experiências e alegrias que os seus clientes viverão nos espaços, mas a história de Ana Luiza na arquitetura começou faz tempo. Desde seus seis anos de idade brincando com elementos de organização, Ana Luiza entende a importância de transmitir histórias reais com o seu trabalho.</p>
                         <br>

@@ -10,6 +10,10 @@ html, body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+a,img {
+    border: none;
+}
+
 #container {
     width: 100%;
     max-width: 1920px;
@@ -51,7 +55,7 @@ html, body {
     width: 100%;
     height: 100%;
     max-height: 600px;
-    background-color: #063640;
+    background-color: #955561;
 }
 
 .bn_content {
@@ -143,6 +147,8 @@ html, body {
     font-weight: 700;
 }
 
+
+
 /* Hover to projects */
 
 .grid_bg {
@@ -166,13 +172,15 @@ html, body {
     color: #ffffff;
 }
 
+
+
 /* Hover to projects */
 
 .cards_content {
     width: 100%;
     max-width: 530px;
     height: 100%;
-    max-height: 300px;
+    max-height: 250px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -342,7 +350,6 @@ html, body {
 
 
 
-
 /* Componets to carousel */
 .carousel {
     width: 100%;
@@ -351,12 +358,6 @@ html, body {
     overflow: hidden;
     position: relative;
     margin: 0 auto;
-}
-
-.slide {
-    width: 100vw;
-    height: 600px;
-    object-fit: cover
 }
 
 .bn_container {
@@ -371,6 +372,35 @@ html, body {
     margin: 80px 0 0 0;
 }
 
+.slide {
+    width: 100vw;
+    height: 600px;
+    object-fit: cover;
+}
+
+.slide img {
+    position:absolute;
+    width:100%;
+    height:100%;
+}
+
+.slide {
+    animation-duration: 2.5s;
+    animation-name: slidein;
+}
+@-webkit-keyframes slidein {
+    from {
+        right: 100%;
+        width: 0%;
+      }
+    to {
+        right: 0%;
+        width: 100%;
+    }
+}
+
+
+
 /* Components to modal */
 .modal_content {
     position: fixed;
@@ -383,6 +413,26 @@ html, body {
     display: none;
     justify-content: center;
     align-items: center;
+}
+
+.modal_container {
+    position: relative;
+    margin: 10px 40px 20px 60px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.modal {
+    position: relative;
+    width: 100%;
+    max-width: 750px;
+    height: 100%;
+    max-height: 600px;
+    background-color: #ffffff;
+    border-radius: 2%;
+    overflow: hidden;
 }
 
 .show {
@@ -400,17 +450,6 @@ html, body {
     z-index: 999;
     margin: 20px 20px 0 0;
     cursor: pointer;
-}
-
-.modal {
-    position: relative;
-    width: 100%;
-    max-width: 750px;
-    height: 100%;
-    max-height: 600px;
-    background-color: #ffffff;
-    border-radius: 2%;
-    overflow: hidden;
 }
 
 .modal_text {
@@ -448,11 +487,24 @@ html, body {
     object-fit: cover;
 }
 
-.modal_container {
-    position: relative;
-    margin: 10px 40px 20px 60px;
-    height: 100%;
+.direction {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    padding: 20px 0;
+    position: absolute;
+    z-index: 1000;
+    left: 75%;
+    bottom: 1%;
 }
+
+.direction button {
+    width: 60px;
+    font-size: 20px;
+    padding: 5px;
+    color: #99737d;
+    background-color: #ccbeb9;
+    margin: 0 0 0 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
