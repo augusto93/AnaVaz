@@ -7,6 +7,19 @@ let arrayClose = Array.from(closeProjects);
 
 let show = document.querySelector(".show");
 
+let imagesProjects = document.querySelectorAll(".modal-next-content");
+let arrayImg = Array.from(imagesProjects);
+
+// console.log(arrayImg);
+
+arrayImg.forEach(event => {
+	event.addEventListener("click", function () {
+		let img = document.querySelector(".modal_image");
+		img.classList.toggle("mode-on");
+	});
+});
+
+
 arrayProjects.forEach(event => {
 	event.addEventListener("click", function () {
 		this.nextElementSibling.classList.toggle("show");
@@ -73,7 +86,6 @@ carroselSlides(carroselIndex);
 function nextSlides(n) {
   carroselSlides(carroselIndex += n);
 };
-
 
 function carroselSlides(n) {
   let i;
