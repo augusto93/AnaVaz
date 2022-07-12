@@ -393,7 +393,7 @@ a,img {
     animation-duration: 2.5s;
     animation-name: slidein;
 }
-@-webkit-keyframes slidein {
+@keyframes slidein {
     from {
         right: 100%;
         width: 0%;
@@ -486,6 +486,10 @@ a,img {
     padding: 20px 0 0 0;
 }
 
+.modal_image :nth-child(2) {
+    display: none;
+}
+
 .modal_image img {
     width: 650px;
     height: 235px;
@@ -497,6 +501,7 @@ a,img {
     height: 100%;
     display: flex;
     justify-content: flex-start;
+    cursor: pointer;
 }
 
 .modal-next-content {
@@ -526,13 +531,3 @@ a,img {
     cursor: pointer;
     border-radius: 5px;
 }
-
-.mode-on {
-    display: block;
-}
-
-.mode-off {
-    display: none;
-}
-
-

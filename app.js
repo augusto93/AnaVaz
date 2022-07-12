@@ -7,19 +7,6 @@ let arrayClose = Array.from(closeProjects);
 
 let show = document.querySelector(".show");
 
-let imagesProjects = document.querySelectorAll(".modal-next-content");
-let arrayImg = Array.from(imagesProjects);
-
-// console.log(arrayImg);
-
-arrayImg.forEach(event => {
-	event.addEventListener("click", function () {
-		let img = document.querySelector(".modal_image");
-		img.classList.toggle("mode-on");
-	});
-});
-
-
 arrayProjects.forEach(event => {
 	event.addEventListener("click", function () {
 		this.nextElementSibling.classList.toggle("show");
@@ -123,3 +110,15 @@ $('a[href^="#"]').on('click', function(e) {
 		scrollTop: targetOffset - 100
 	}, 1000);
 });
+
+// _________________________________________________________________________
+// Event to change image in modal components
+function changeAp01 () {
+	document.getElementById('ap-02').style.display = "none";
+	document.getElementById('ap-01').style.display = "block";
+}
+
+function changeAp02 () {
+	document.getElementById('ap-01').style.display = "none";
+	document.getElementById('ap-02').style.display = "block";
+}
