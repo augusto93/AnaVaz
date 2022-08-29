@@ -110,15 +110,3 @@ $('a[href^="#"]').on('click', function(e) {
 		scrollTop: targetOffset - 100
 	}, 1000);
 });
-
-// _________________________________________________________________________
-// Event to change image in modal components
-function changeAp01 () {
-	document.getElementById('ap-02').style.display = "none";
-	document.getElementById('ap-01').style.display = "block";
-}
-
-function changeAp02 () {
-	document.getElementById('ap-01').style.display = "none";
-	document.getElementById('ap-02').style.display = "block";
-}

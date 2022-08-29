@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<style>
+.modal_content {display: flex !important;}
+</style>
+<body>
+<div class="modal_content">
+  <div class="modal">
+    <div class="direction">
+        <button class="prev" onclick="changeModal(-1)" ><img src="/_img/mode-p.png" alt="prev"></button>
+        <button class="next" onclick="changeModal(1)" ><img src="/_img/mode-n.png" alt="next"></button>
+    </div>
+    <div class="close_modal">X Fechar</div>
+    <div class="modal_container">
+      <div class="modal_text">
+          <h3>(APT 706)</h3> 
+          <h4>Apartamento Ipanema</h4>
+          <p>Localizado no coração de Ipanema, este apartamento de 45 m² foi reformado para valorizar o imóvel e para ser colocado para locação. O desafio era torná-lo mais amplo e deixá-lo convidativo para qualquer pessoa que fosse alugá-lo e para colocar a sua própria personalidade. Por isso foi pensando em uma cozinha integrada com a sala para dar mais amplitude, além de criar um visual contemporâneo e aconchegante. O banheiro de serviço foi reaproveitado e transformado em lavabo.</p>
+      </div>
+      <div class="container-modal">
+        <div class="myModal">
+          <img src="/_img/_projects/_03/01-EdsonKroger_.jpg" style="width:640px">
+        </div>
+      
+        <div class="myModal">
+          <img src="/_img/_projects/_03/02-EdsonKroger_.jpg" style="width:640px">
+        </div>
+      
+        <div class="myModal">
+          <img src="/_img/_projects/_03/03-EdsonKroger_.jpg" style="width:640px">
+        </div>
+          
+        <div class="myModal">
+          <img src="/_img/_projects/_03/04-EdsonKroger_.jpg" style="width:640px">
+        </div>
+            
+        <div class="row">
+          <div class="column">
+            <img class="demo cursor" src="/_img/_projects/_03/_thumb/01-EdsonKroger_.jpg" style="width:100%" onclick="changeAp01(1)" alt="01">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="/_img/_projects/_03/_thumb/02-EdsonKroger_.jpg" style="width:100%" onclick="changeAp01(2)" alt="02">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="/_img/_projects/_03/_thumb/03-EdsonKroger_.jpg" style="width:100%" onclick="changeAp01(3)" alt="03">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="/_img/_projects/_03/_thumb/04-EdsonKroger_.jpg" style="width:100%" onclick="changeAp01(4)" alt="04">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+let modeIndex = 1;
+modeSlides(modeIndex);
+
+function changeAp01(n) {
+  modeSlides(modeIndex = n);
+}
+
+function modeSlides(n) {
+  let i;
+  let modal = document.getElementsByClassName("myModal");
+  if (n > modal.length) {modeIndex = 1}
+  if (n < 1) {modeIndex = modal.length}
+  for (i = 0; i < modal.length; i++) {
+    modal[i].style.display = "none";
+  }
+  modal[modeIndex-1].style.display = "flex";
+}
+</script>
+    
+</body>
+</html>
